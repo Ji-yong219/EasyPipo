@@ -6,4 +6,4 @@ multiprocessing-generator >= 0.3
 tqdm >= 4.50.2
 scipy >= 1.7.0
 colormath >= 3.0.0
-opencv-python >= 3.4.0
+opencv-python >= 4.2.0.34
