@@ -30,19 +30,6 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
         
-        
-      - name: Update apt-get
-        run: |
-          sudo apt-get update -y
-        
-      - name: install libgl1-mesa-glx
-        run: |
-          sudo apt-get install -y libgl1-mesa-glx
-        
-      - name: install libglib2.0-0
-        run: |
-          sudo apt-get install -y libglib2.0-0
-        
       # Optional: Add step to run tests here (PyTest, Django test suites, etc.)
       
       - name: Upload artifact for deployment jobs
@@ -66,6 +53,19 @@ jobs:
         with:
           name: python-app
           path: .
+        
+        
+      - name: Update apt-get
+        run: |
+          sudo apt-get update -y
+        
+      - name: install libgl1-mesa-glx
+        run: |
+          sudo apt-get install -y libgl1-mesa-glx
+        
+      - name: install libglib2.0-0
+        run: |
+          sudo apt-get install -y libglib2.0-0
           
       - name: 'Deploy to Azure Web App'
         uses: azure/webapps-deploy@v2
