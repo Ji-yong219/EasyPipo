@@ -26,6 +26,10 @@ jobs:
         run: |
           python -m venv venv
           source venv/bin/activate
+        
+      - name: Update apt-get
+        run: |
+          apt-get update && apt-get install libgl1-mesa-glx && apt-get install -y libglib2.0-0
       
       - name: Install dependencies
         run: pip install -r requirements.txt
