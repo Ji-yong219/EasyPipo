@@ -60,4 +60,4 @@ jobs:
         with:
           app-name: 'EASYPIPO'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_67F3BA8022F740639821BB4EE8D5B41E }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_D55AF445D81A4FDE859B2BA197F52B32 }}
